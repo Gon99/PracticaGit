@@ -1,6 +1,6 @@
 1.¿Qué comando utilizaste en el paso 11? ¿Por qué?
 git reset --hard HEAD~1
-Para deshacer un commit podemos utilizar el comando git reset y al querer perder los cambios realizados en el working copy utilizamos el atributo --hard, HEAD~1 indica que queremos retroceder un paso para atrás en este caso el commit anterior.
+Para deshacer un commit podemos utilizar el comando git reset y al querer perder los cambios realizados en el working copy utilizamos el atributo --hard, HEAD-1 indica que queremos retroceder un paso para atrás en este caso el commit anterior.
 
 2.¿Qué comando o comandos utilizaste en el paso 12? ¿Por qué?
 Primero hice un git reflog para ver el id del estado al que quiero volver, luego con el comando git reset --hard id volví al commit anterior y recuperé los datos de ese commit, por otro lado probé a hacerlo con git checkout idCommit, tras un reset anterior, y también recupera el commit, vuelves a él, pero no esta en ninguna rama entras en el estado 'detached HEAD' al parecer es un estado experimental para hacer pruebas, para crear la rama sería con git checkout -b nombreNuevaRama, en mi opinión el primer paso utilizado es mucho más eficiente.
