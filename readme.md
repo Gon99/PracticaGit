@@ -15,7 +15,7 @@ Sí, debido a que el contenido de los archivos git-nuestro.md es distinto en la 
 No ha causado ningun conflicto, lo que ha ocurrido esque la rama master ha absorbido a la rama styled mediante un merge fast-forward actualizando el contenido de master al de styled
 
 6.¿Qué comando o comandos utilizaste en el paso 25?
-git log --graph
+git log --graph 
 
 7.El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?
 Sí ya que no hace falta crear un nuevo commit para que master absorba a Title, en este caso master únicamente tiene que desplazar su puntero hasta el commit de la rama Title para absorber sus características.
